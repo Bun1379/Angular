@@ -1,0 +1,29 @@
+.text-formatter-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  white-space: pre-wrap;
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
+}

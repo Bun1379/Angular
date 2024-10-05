@@ -1,0 +1,12 @@
+<div class="palindrome-checker-container">
+  <h1>Kiểm Tra Chuỗi Đối Xứng</h1>
+  <input type="text" [(ngModel)]="inputString" placeholder="Nhập chuỗi cần kiểm tra" />
+  <button (click)="checkPalindrome()">Kiểm Tra</button>
+
+  <div *ngIf="isPalindrome !== null">
+    <p *ngIf="isPalindrome; else notPalindrome">Chuỗi này là đối xứng.</p>
+    <ng-template #notPalindrome>
+      <p>Chuỗi này không phải là đối xứng.</p>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.color-picker-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+}

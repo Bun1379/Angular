@@ -1,0 +1,15 @@
+<div class="color-picker-container">
+  <h1>Chọn Màu Nền Trang</h1>
+
+  <label for="color-select">Chọn một màu:</label>
+  <select id="color-select" [(ngModel)]="selectedColor" (change)="onColorChange(selectedColor)">
+    <option value="">--Chọn Màu--</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+
+  <p *ngIf="selectedColor">
+    Màu nền hiện tại: <strong>{{ selectedColor }}</strong>
+  </p>
+</div>

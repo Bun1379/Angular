@@ -1,0 +1,26 @@
+<div class="random-array-container">
+  <h1>Hiển Thị Mảng Ngẫu Nhiên</h1>
+
+  <button (click)="generateRandomArray()">Tạo Mảng Mới</button>
+
+  <div class="all-items-display" *ngIf="allItems.length > 0">
+    <h2>Tất Cả Các Phần Tử</h2>
+    <div class="row">
+      <div class="item" *ngFor="let item of allItems">
+        {{ item }}
+      </div>
+    </div>
+  </div>
+
+  <div class="array-display" *ngIf="displayedRows.length > 0">
+    <h2>Hiển Thị Các Hàng Hoàn Chỉnh</h2>
+    <div class="row" *ngFor="let row of displayedRows">
+      <div class="item" *ngFor="let item of row">
+        {{ item }}
+      </div>
+    </div>
+    <p *ngIf="allItems.length > displayedRows.length * 4">
+      Đã ẩn {{ allItems.length - (displayedRows.length * 4) }} phần tử.
+    </p>
+  </div>
+</div>

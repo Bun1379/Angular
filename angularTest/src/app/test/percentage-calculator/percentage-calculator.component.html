@@ -1,0 +1,9 @@
+<div class="calculator-container">
+  <h1>Tính Số Theo Phần Trăm</h1>
+  <button (click)="generateRandomNumbers()">Tạo Số</button>
+  <div *ngIf="numberA && numberB">
+    <p>Số A: {{ numberA }}</p>
+    <p>Số B: {{ numberB }}</p>
+    <p>Kết quả C = A / B: {{ result }}</p>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="stopwatch">
+    <h1>{{ formatTime() }}</h1>
+
+    <button (click)="start()" [disabled]="running">Start</button>
+    <button (click)="stop()" [disabled]="!running">Stop</button>
+    <button (click)="reset()">Reset</button>
+</div>

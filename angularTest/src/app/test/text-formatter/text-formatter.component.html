@@ -1,0 +1,15 @@
+<div class="text-formatter-container">
+  <h1>Định Dạng Văn Bản</h1>
+
+  <textarea [(ngModel)]="inputText" placeholder="Nhập đoạn văn bản của bạn ở đây..." rows="6" cols="60">
+  </textarea>
+
+  <br />
+
+  <button (click)="formatText()">Định Dạng</button>
+
+  <div *ngIf="formattedText">
+    <h2>Kết Quả:</h2>
+    <p>{{ formattedText }}</p>
+  </div>
+</div>
